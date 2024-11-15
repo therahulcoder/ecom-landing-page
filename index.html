@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A product listing page for VENIA, showcasing clothing, electronics, and more.">
+  <meta name="keywords" content="products, clothing, electronics, outerwear, shop, buy">
+  <meta name="author" content="Your Company">
+  <title>Product Listing Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+   <!-- Header Section -->
+   <header>
+    <div class="header">
+      <div class="menu-icon">☰</div>
+      <h1>VENIA</h1>
+      <div class="cart-icon">🛒<span class="cart-count">10</span></div>
+    </div>
+  </header>
+
+   <!-- Banner Section -->
+   <section class="banner">
+    <img src="./media/img/banner-img.jpg" alt="Banner Image" class="banner-image">
+    <div class="banner-text">
+      <h2>Men’s Outerwear</h2>
+      <div class="underline"></div>
+    </div>
+  </section>
+
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">/ E N I A</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#women">Women</a></li>
+      <li><a href="#men">Men</a></li>
+      <li><a href="#smart-gear">Smart Gear</a></li>
+      <li><a href="#accessories">Accessories</a></li>
+    </ul>
+    <input type="text" id="search" class="search-input" placeholder="Search products..." />
+    <div class="cart-icon">
+      <img src="./media/img/cart-icon.png" alt="Cart">
+      <span class="cart-count">10</span>
+    </div>
+  </nav>
+
+  <!-- Category Banner Section -->
+  <section class="category-banner">
+    <div class="category-title">
+      <h1>Men’s</h1>
+      <h1>Outerwear</h1>
+      <div class="underline"></div>
+    </div>
+    <img src="./media/img/banner-img.jpg" width="100px" alt="Men's Outerwear Banner" class="banner-image">
+  </section>
+
+   <!-- Breadcrumbs -->
+   <nav class="breadcrumbs">
+    <span>Clothing</span> / <span>Women’s</span> / <span>Outerwear</span>
+  </nav>
+
+  <!-- Filter and Sort Section -->
+  <section class="filter-sort">
+    <select id="sort-filter">
+      <option value="asc">Sort by Price: Low to High</option>
+      <option value="desc">Sort by Price: High to Low</option>
+    </select>
+  </section>
+
+  <div class="container">
+    <!-- Filter Sidebar -->
+    <aside class="filter-sidebar">
+      <div class="aside-div">
+        <h3>Filters</h3>
+        <hr />
+        <div class="filter-section" id="filter-section">
+          <h5>Categories</h5>
+          <label>
+            <input type="checkbox" name="category" value="jewelery"> Jewellery
+          </label>
+          <label>
+            <input type="checkbox" name="category" value="electronics"> Electronics
+          </label>
+          <label>
+            <input type="checkbox" name="category" value="men's clothing"> Men’s Clothing
+          </label>
+          <label>
+            <input type="checkbox" name="category" value="women's clothing"> Women’s Clothing
+          </label>
+        </div>
+        <hr />
+      </div>
+    </aside>
+    <!-- Product Grid -->
+    <section class="product-grid" id="product-grid">
+      <!-- Products will be loaded here -->
+    </section>
+
+  </div>
+
+  <!-- Load More Button -->
+  <button id="load-more" class="load-more">Load More</button>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-column">
+        <h3>Account</h3>
+        <a href="#signin">Sign In</a>
+        <a href="#register">Register</a>
+        <a href="#order-status">Order Status</a>
+      </div>
+      <div class="footer-column">
+        <h3>About Us</h3>
+        <a href="#our-story">Our Story</a>
+        <a href="#careers">Careers</a>
+      </div>
+      <div class="footer-column">
+        <h3>Help</h3>
+        <a href="#contact">Contact Us</a>
+        <a href="#order-status">Order Status</a>
+        <a href="#returns">Returns</a>
+      </div>
+      <div class="footer-column">
+        <h3>Follow Us!</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+        <div class="footer-social-icons">
+          <a href="#instagram"><img src="./media/img/instagram-icon.jpeg" alt="Instagram"></a>
+          <a href="#facebook"><img src="./media/img/facebook-icon.png" alt="Facebook"></a>
+          <a href="#twitter"><img src="./media/img/twitter-icon.png" alt="Twitter"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-logo">
+        <h2>VENIA</h2>
+      </div>
+      <p>&copy; 2024 VENIA, Company Name, Address Ave, City Name, State ZIP</p>
+      <div class="footer-legal">
+        <a href="#terms">Terms of Use</a>
+        <a href="#privacy">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
